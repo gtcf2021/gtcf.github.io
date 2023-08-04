@@ -1,0 +1,19 @@
+.bg-img-1 {
+  background-image: url('carousel_img/1.jpg');
+}
+
+.bg-img-2 {
+  background-image: url('carousel_img/3.jpg');
+}
+
+.bg-img-3 {
+  background-image: url('carousel_img/2.jpg');
+}
+
+.carousel-image {
+  background-position:left;
+  background-position-y:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
