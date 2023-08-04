@@ -10,6 +10,21 @@
 body{
   padding-top: 90px;
 }
+*{
+  margin:0;
+  padding: 0;
+}
+.background-image{
+ background-image:url('../image/index/background.jpg');
+ position: relative;
+ background-blend-mode:multiply;
+ padding: 7.5rem;/*離上面的距離*/
+ width: 100%;
+ min-height: 100vh;/*最小要滿版*/
+ background-size:40%;
+ align-items: center;
+ justify-content: cover;
+}
 /*navbar*/
 
 .navbar {
