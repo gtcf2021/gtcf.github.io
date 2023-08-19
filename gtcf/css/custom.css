@@ -2,7 +2,7 @@
 /*navbar 手機調整*/
 @media(max-width:991px){
   .logo{
-    height: 75px;
+    height: 70px;
   }
   #offcanvasNavbar{
     background-color: rgba(69, 69, 69, 0.15);
