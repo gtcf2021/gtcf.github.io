@@ -2,10 +2,10 @@
 /*navbar 手機調整*/
 @media(max-width:991px){
   .logo{
-    height: 70px;
+    height: 75px;
   }
   #offcanvasNavbar{
-    background-color: rgba(69, 69, 69, 0.15);
+    background-color: rgba(130, 129, 129, 0.605);
     backdrop-filter: blur(10px); 
     
   }
