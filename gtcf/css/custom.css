@@ -1,10 +1,34 @@
 @charset "UTF-8";
+/*navbar 手機調整*/
+@media(max-width:991px){
+  .logo{
+    height: 75px;
+  }
+  #offcanvasNavbar{
+    background-color: rgba(69, 69, 69, 0.15);
+    backdrop-filter: blur(10px); 
+    
+  }
+  .active#offcanvasNavbar{
+    background-color: rgba(248, 228, 220, 0.15);
+    backdrop-filter: blur(10px); 
+    left: 0px;
+  }
+  .nav-link{
+    color:#F5F5F5;
+  }
+  .offcanvas-body{
+    display: flex;
+    align-items: center; 
+    line-height: 50px;
+  }
+}
 .text-bg-light {
     color: #E6E6FA !important;
     background-color: RGBA(255,239,213, var(--bs-bg-opacity, 1)) !important;
   }
   .text-bg-dark {
-    color: #E6E6FA !important;
+    color: #000005 !important;
     background-color: RGBA(255,239,213, var(--bs-bg-opacity, 1)) !important;
   }
 body{
@@ -16,16 +40,24 @@ body{
 }
 .background-image{
  background-image:url('../image/index/background.jpg');
- position: relative;
+ background-attachment: fixed;
  background-blend-mode:multiply;
- padding: 7.5rem;/*離上面的距離*/
+ padding-top: 5.5rem;/*離上面的距離*/
  width: 100%;
  min-height: 100vh;/*最小要滿版*/
- background-size:40%;
+ background-size: auto;
  align-items: center;
  justify-content: cover;
+ background-repeat: no-repeat;
 }
-/*navbar*/
+/* 調整成立宗旨區塊的文字大小 */
+.background-image p {
+  font-size: 20px; /* 調整您想要的文字大小 */
+}
+
+/* 去除文字的邊框效果 */
+
+/*navbar
 
 .navbar {
   --bs-navbar-padding-x: 0;
@@ -60,7 +92,7 @@ body{
   justify-content: space-between;
   transition:0.6s;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
-}
+}*/
 .carousel-item {
   position: relative;
   display: none;
@@ -73,7 +105,7 @@ body{
   backface-visibility:unset;
   transition: transform 0.6s ease-in-out;
 }
-.navbar-nav {
+/*.navbar-nav {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
@@ -86,7 +118,7 @@ body{
   margin-bottom: 0;
   list-style: none;
 }
-/*.navbar-expand-lg {
+.navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
   }*/
@@ -105,20 +137,7 @@ body{
     --bs-text-opacity: 1;
     color: rgba(#6c757d, var(--bs-text-opacity)) !important;
   }
-/*聯絡我們*/
- .contact-map iframe
- {
-  width:100%;
-  height:100%;
- }
 
-.contact-form{
-  width:50%;
-  height:auto;
-  flex:50%;
-  padding:30px;
-  text-align:left;
-}
 
 
 /*照片效果*/
@@ -219,57 +238,6 @@ body{
     transition: all 0.1s;
   }
 
-  /* Side Bar*/
-
-
-
-  #sidebar.active {
-      margin-left: -250px;
-  }
-  .wrapper{
-    display: flex;
-    text-decoration: none;
-    transition: all 0.3s;
-  }
-
-  #sidebar{
-    min-width: 250px;
-    max-width: 250px;
-    background:#F5F5F5;
-    color: #212529;
-    transition: all 0.3s;
-  }
-
-
-  #sidebar .sidebar-header{
-    padding: 20px;
-    background: #6d7fcc;
-  }
-  /*#sidebar ul.components{
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
-  }*/
-
-  /*#sidebar ul p{
-    color: #fff;
-    padding: 10px;
-  }*/
-
-  #sidebar ul li a{
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-  }
-
-  /*#sidebar ul li a:hover{
-    color: #7386D5;
-    background: #fff;
-  }*/
-  /*#sidebar ul li.active>a,
-  a[aria-expanded="true"] { 
-    color: #fff;
-    background: #6d7fcc;
-  }*/
 
   a[data-toggle="collapse"]{
     position: relative;
@@ -289,6 +257,9 @@ body{
 
 
   @media (max-width: 768px) {
+      #carouselExampleIndicators {
+      width: 100%;
+      }
       #sidebar {
           margin-left: -250px;
       }
@@ -345,11 +316,6 @@ body{
       left: -25px;
       }
 
-/*聯絡我們*/
-    .connect_us{
-      display: inline-block;
-      vertical-align: middle;
-    }
 
 
 /**/
@@ -358,7 +324,7 @@ body{
 
 .views-exposed-form .views-exposed-widget{float:left;padding:.5em 1em 0 0;}.views-exposed-form .views-exposed-widget .form-submit{margin-top:1.6em;}.views-exposed-form .form-item,.views-exposed-form .form-submit{margin-top:0;margin-bottom:0;}.views-exposed-form label{font-weight:bold;}
 
-/*navbar*/
+/*navbar
 
 .nav-link,
 .nav-link *,
@@ -463,4 +429,4 @@ body{
   to {
     transform: translateX(0);
   }
-}
+}*/
