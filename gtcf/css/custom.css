@@ -32,12 +32,16 @@
     background-color: RGBA(255,239,213, var(--bs-bg-opacity, 1)) !important;
   }
 body{
-  padding-top: 90px;
+  padding-top: 50px;
+}
+.margin-top {
+  margin-top: 80px; /* 根据需要进行调整 */
 }
 *{
   margin:0;
   padding: 0;
 }
+
 .background-image{
  background-image:url('../image/index/background.webp');
  background-attachment: fixed;
@@ -93,6 +97,21 @@ body{
   transition:0.6s;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }*/
+/* 将轮播图水平居中 */
+.carousel {
+  margin: 0 auto;
+}
+
+/* 调整轮播图的最大宽度，以防止过大的宽度导致无法水平居中 */
+.carousel-inner {
+  max-width: 1000px; /* 根据需要进行调整 */
+  margin: 0 auto;
+}
+/* 轮播图整体居中 */
+#carouselExampleIndicators {
+  margin: 0 auto;
+  max-width: 1000px; /* 根据需要进行调整 */
+}
 
 .carousel-item {
   position: relative;
@@ -268,12 +287,19 @@ body{
   ul{list-style: none;}
 
 
-  .form-control{height:auto;padding:.6rem 0 .4rem 0;margin:0 0 .5rem 0;background-color:transparent;border-radius:0}
-  .form-control{padding:1.1rem .7rem .4rem !important}
-  .form-control{-webkit-box-sizing:border-box !important;box-sizing:border-box !important}
-  .form-control{padding-left:2.7rem !important}
-  .form-control{padding-right:2.7rem !important}
-  .form-control{padding-left:2.5rem !important;padding-right:2.5rem !important}
+  /* 将轮播的左右导航按钮改为黑色 */
+.carousel-indicators,
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* 将图标颜色反转为白色，以在黑色背景上显示黑色图标 */
+}
+
+/* 修改轮播的左右导航按钮的文本颜色为黑色 */
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next {
+  color: black;
+}
 
 
   .item{
