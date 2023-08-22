@@ -10,38 +10,43 @@
   </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-light" >
-      <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">
-          <img src="image/index/文化基金會-LOGO(橫).png" alt="金三角文化基金會" title="金三角文化基金會logo" height="70">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">訊息公告</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+  
+      <a class="navbar-brand justify-content-center" href="index.html"><img src="image/index/文化基金會-LOGO(橫).png" alt="金三角文化基金會" title="金三角文化基金會logo" height="70" class="logo"></a>
+  
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="side offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" ria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3 fs-5">
+            <li class="nav-item mx-2">
+              <a class="nav-link js-scroll-trigger" href="index.html" >首頁</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-backdrop" href="introduction.html" data-bs-toggle="dropdown" aria-expanded="false">認識我們</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="introduction.html">緣起</a></li>
-                <li><a class="dropdown-item" href="found_goal.html">成立宗旨</a></li>
-                <li><a class="dropdown-item" href="found_founder.html">創辦人介紹</a></li>
-                <li><a class="dropdown-item" href="found_organization.html">組織架構</a></li>
-              </ul>
+            <li class="nav-item mx-2">
+              <a class="nav-link js-scroll-trigger" href="found.html" >認識我們</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="photoes.html">活動花絮</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link js-scroll-trigger" href="photoes.html" >活動花絮</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contribution.html">我想捐款</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link js-scroll-trigger" href="artifact.html" >文物資訊</a>
             </li>
-        </ul>
+            <li class="nav-item mx-2">
+              <a class="nav-link js-scroll-trigger" aria-current="page" href="contribution.html" >我想捐款</a>
+            </li>
+            
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
   </header>
     <main>
     <div>
