@@ -121,11 +121,11 @@ body{
 .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
-  }*/
-/*.bg-light {
-    --bs-bg-opacity: 1;
-    background-color: rgba(255,239,213, var(--bs-bg-opacity)) !important;
-  }*/
+  }*//**/
+.bg-light {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(233,233,231, var(--bs-bg-opacity)) !important;
+  }
  .align-items-end {
     align-items: flex-end !important;
     font-size: 1.25rem;
